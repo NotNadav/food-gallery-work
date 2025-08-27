@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react'
 import axios from 'axios'
 import './App.css'
 
-// רכיב האפליקציה הראשי - מטפל בגלילת הארוחות
 function App() {
   // מצב עבור קטגוריות, ארוחות, הצגת פופאפ וארוחה נבחרת
   const [categories, setCategories] = useState([])
@@ -21,7 +20,6 @@ function App() {
     }
   }
 
-  // טוען קטגוריות בטעינת הרכיב
   useEffect(() => {
     (async () => {
       try {
@@ -167,4 +165,5 @@ function MealPopup({ meal, setShowpop }) {
 }
 
 export default App
+
 
